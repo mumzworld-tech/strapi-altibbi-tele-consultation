@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "orderId": {
+      "type": "string",
+      "unique": true
+    },
+    "customer": {
+      "type": "component",
+      "component": "content.customer",
+      "repeatable": false
+    },
+    "mainConcern": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "currencyCode": {
+      "type": "enumeration",
+      "enum": [
+        "SAR",
+        "AED"
+      ]
+    },
+    "responseId": {
+      "type": "string"
+    },
+    "paymentId": {
+      "type": "string"
+    },
+    "package": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::package.package"
+    },
+    "locales": {
+      "type": "string"
+    },
+    "customerId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "consultationId": {
+      "type": "string"
+    }
+  }
+}

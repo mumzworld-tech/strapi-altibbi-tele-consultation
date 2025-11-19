@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_sliders",
+  "info": {
+    "displayName": "Slider"
+  },
+  "options": {},
+  "attributes": {
+    "minimum": {
+      "type": "integer",
+      "min": 0
+    },
+    "maximum": {
+      "type": "integer"
+    },
+    "value": {
+      "type": "integer",
+      "min": 0
+    }
+  },
+  "config": {}
+}
