@@ -57,6 +57,21 @@
     },
     "consultationId": {
       "type": "string"
+    },
+    "paymentStatus": {
+      "type": "enumeration",
+      "default": "Pending payment",
+      "enum": [
+        "Pending payment",
+        "Payment failed",
+        "Payment confirmed",
+        "Rescheduled",
+        "Sent to vendor",
+        "Cancelled",
+        "QC/Feedback",
+        "Completed",
+        "Refunded"
+      ]
     }
   }
 }

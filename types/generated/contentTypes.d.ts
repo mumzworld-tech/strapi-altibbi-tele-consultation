@@ -652,6 +652,20 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     orderId: Schema.Attribute.String & Schema.Attribute.Unique;
     package: Schema.Attribute.Relation<'oneToOne', 'api::package.package'>;
     paymentId: Schema.Attribute.String;
+    paymentStatus: Schema.Attribute.Enumeration<
+      [
+        'Pending payment',
+        'Payment failed',
+        'Payment confirmed',
+        'Rescheduled',
+        'Sent to vendor',
+        'Cancelled',
+        'QC/Feedback',
+        'Completed',
+        'Refunded',
+      ]
+    > &
+      Schema.Attribute.DefaultTo<'Pending payment'>;
     price: Schema.Attribute.Decimal;
     publishedAt: Schema.Attribute.DateTime;
     responseId: Schema.Attribute.String;
