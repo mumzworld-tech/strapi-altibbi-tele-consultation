@@ -451,6 +451,10 @@ export interface ApiConfigurationConfiguration extends Struct.SingleTypeSchema {
       'api::configuration.configuration'
     > &
       Schema.Attribute.Private;
+    phoneCountryCode: Schema.Attribute.Component<
+      'content.phone-country-code',
+      true
+    >;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

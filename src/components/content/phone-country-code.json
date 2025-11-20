@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_content_phone_country_codes",
+  "info": {
+    "displayName": "PhoneCountryCode"
+  },
+  "options": {},
+  "attributes": {
+    "countryCode": {
+      "type": "enumeration",
+      "enum": [
+        "AE",
+        "SA"
+      ]
+    }
+  },
+  "config": {}
+}

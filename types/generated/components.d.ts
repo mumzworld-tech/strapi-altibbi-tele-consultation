@@ -67,6 +67,16 @@ export interface ContentOverview extends Struct.ComponentSchema {
   };
 }
 
+export interface ContentPhoneCountryCode extends Struct.ComponentSchema {
+  collectionName: 'components_content_phone_country_codes';
+  info: {
+    displayName: 'PhoneCountryCode';
+  };
+  attributes: {
+    countryCode: Schema.Attribute.Enumeration<['AE', 'SA']>;
+  };
+}
+
 export interface ContentProcessStep extends Struct.ComponentSchema {
   collectionName: 'components_content_process_steps';
   info: {
@@ -112,6 +122,7 @@ declare module '@strapi/strapi' {
       'content.list': ContentList;
       'content.our-process': ContentOurProcess;
       'content.overview': ContentOverview;
+      'content.phone-country-code': ContentPhoneCountryCode;
       'content.process-step': ContentProcessStep;
       'content.slider': ContentSlider;
     }

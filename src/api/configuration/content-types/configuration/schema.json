@@ -20,6 +20,11 @@
       "type": "component",
       "component": "content.slider",
       "repeatable": false
+    },
+    "phoneCountryCode": {
+      "type": "component",
+      "component": "content.phone-country-code",
+      "repeatable": true
     }
   }
 }
