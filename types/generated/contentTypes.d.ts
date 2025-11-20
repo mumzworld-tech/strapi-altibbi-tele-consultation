@@ -673,6 +673,8 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     price: Schema.Attribute.Decimal;
     publishedAt: Schema.Attribute.DateTime;
     responseId: Schema.Attribute.String;
+    smsConfirmationSent: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
     total: Schema.Attribute.Decimal;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

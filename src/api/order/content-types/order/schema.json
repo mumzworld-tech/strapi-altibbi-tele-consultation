@@ -72,6 +72,10 @@
         "Completed",
         "Refunded"
       ]
+    },
+    "smsConfirmationSent": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
