@@ -530,6 +530,12 @@ export interface ApiDashboardDashboard extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    ctaFree: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     description: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -752,6 +758,12 @@ export interface ApiPackagePackage extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::package.package'
     >;
+    originalPrice: Schema.Attribute.Decimal &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     price: Schema.Attribute.Decimal &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

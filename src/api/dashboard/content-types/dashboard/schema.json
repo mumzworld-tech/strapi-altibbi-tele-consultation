@@ -96,6 +96,14 @@
           "localized": true
         }
       }
+    },
+    "ctaFree": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

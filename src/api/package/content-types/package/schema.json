@@ -47,6 +47,14 @@
         }
       }
     },
+    "originalPrice": {
+      "type": "decimal",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "currencyCode": {
       "type": "enumeration",
       "pluginOptions": {
