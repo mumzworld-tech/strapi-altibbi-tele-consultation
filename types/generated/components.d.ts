@@ -6,6 +6,7 @@ export interface ContentCheckedList extends Struct.ComponentSchema {
     displayName: 'CheckedList';
   };
   attributes: {
+    description: Schema.Attribute.Text;
     items: Schema.Attribute.Component<'content.list', true>;
     title: Schema.Attribute.String;
   };
